@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Restaurante</title>
     <link rel="stylesheet" href="../estilos/styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 </head>
 <body>
     <div class="login-container">
         <h2>Iniciar Sesión</h2>
         
-        <form id="form-login">
+        <form >
             <label for="rol">Selecciona tu rol:</label>
             <select id="rol" name="rol">
                 <option value="cliente">Cliente</option>
@@ -19,10 +20,11 @@
             
             <input type="text" id="email" placeholder="Usuario" required>
             <input type="password" id="contraseña" placeholder="Contraseña" required>
-            <button type="submit">Iniciar Sesión</button>
+            <button type="submit" id="submit">Iniciar Sesión</button>
         </form>
         
         <p id="error-mensaje" class="error"></p>
     </div>
+    <script src="../scripts/validarLogin.js"></script>
 </body>
 </html>
