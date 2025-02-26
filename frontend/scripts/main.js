@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", async function() {
+/*document.addEventListener("DOMContentLoaded", async function() {
     const contenedor = document.getElementById("mesas-contenedor");
 
     async function cargarMesas() {
@@ -50,3 +50,4 @@ document.addEventListener("DOMContentLoaded", async function() {
 
     cargarMesas(); // Cargar las mesas al inicio
 });
+*/

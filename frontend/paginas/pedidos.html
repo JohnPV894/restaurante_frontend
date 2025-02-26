@@ -10,7 +10,7 @@
     <header>
         <nav class="menu">
             <div class="logo">
-                <li><a href="index.html"><img src="../../imagenes/logorestaurante.png" alt="Logo Restaurante"></a>
+                <li><a href="index.html"><img src="../../imagenes/logorestaurante.png" alt="Logo Restaurante"></a></li>
             </div>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -25,18 +25,47 @@
 
     <main>
         <section class="menu-pedidos">
+            <br><br>
             <h2>Menú Disponible</h2>
-            <ul id="listaPedidos">
-                <li><button onclick="añadirPedido('Plato 1')">+</button> <span>Plato 1</span></li>
-                <li><button onclick="añadirPedido('Plato 2')">+</button> <span>Plato 2</span></li>
-                <li><button onclick="añadirPedido('Plato 3')">+</button> <span>Plato 3</span></li>
-                <li><button onclick="añadirPedido('Plato 4')">+</button> <span>Plato 4</span></li>
-                <li><button onclick="añadirPedido('Plato 5')">+</button> <span>Plato 5</span></li>
-                <li><button onclick="añadirPedido('Plato 6')">+</button> <span>Plato 6</span></li>
-            </ul>
+            <div id="listaPedidos" class="grid-pedidos">
+                <div class="pedido">
+                    <img src="../../imagenes/plato1.jpg" alt="Plato 1">
+                    <h3>Plato 1</h3>
+                    <p>Descripción</p>
+                    <button onclick="añadirPedido('Plato 1')">Agregar</button>
+                </div>
+                <div class="pedido">
+                    <img src="../../imagenes/plato2.jpg" alt="Plato 2">
+                    <h3>Plato 2</h3>
+                    <p>Descripción</p>
+                    <button onclick="añadirPedido('Plato 2')">Agregar</button>
+                </div>
+                <div class="pedido">
+                    <img src="../../imagenes/plato3.jpg" alt="Plato 3">
+                    <h3>Plato 3</h3>
+                    <p>Descripción</p>
+                    <button onclick="añadirPedido('Plato 3')">Agregar</button>
+                </div>
+                <div class="pedido">
+                    <img src="../../imagenes/plato4.jpg" alt="Plato 4">
+                    <h3>Plato 4</h3>
+                    <p>Descripción</p>
+                    <button onclick="añadirPedido('Plato 4')">Agregar</button>
+                </div>
+                <div class="pedido">
+                    <img src="../../imagenes/plato5.jpg" alt="Plato 5">
+                    <h3>Plato 5</h3>
+                    <p>Descripción</p>
+                    <button onclick="añadirPedido('Plato 5')">Agregar</button>
+                </div>
+                <div class="pedido">
+                    <img src="../../imagenes/plato6.jpg" alt="Plato 6">
+                    <h3>Plato 6</h3>
+                    <p>Descripción</p>
+                    <button onclick="añadirPedido('Plato 6')">Agregar</button>
+                </div>
+            </div>
         </section>
     </main>
-
-    <script src="../scripts/pedidos.js"></script>
 </body>
 </html>
