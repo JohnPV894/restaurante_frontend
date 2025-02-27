@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administración de Pedidos</title>
     <link rel="stylesheet" href="../estilos/styles.css">
+    <link rel="stylesheet" href="../estilos/pedidosadmin.css">
 </head>
 <body>
     <header>
@@ -26,16 +27,21 @@
     <main>
         <section class="admin-pedidos">
             <h2>Pedidos Pendientes</h2>
+
+            <form id="formNuevoPlato" class="form-plato">
+                <input type="text" id="nombrePlato" placeholder="Nombre del plato" required>
+                <input type="number" id="precioPlato" placeholder="Precio (€)" required min="1">
+                <button type="submit" class="btn-agregar">Agregar Plato</button>
+                <button type="reset" class="btn-cancelar">Cancelar</button>
+            </form>
+
             <ul id="listaPedidos">
-                <li><span>Plato 1</span> <button class="btn-aceptar">✔</button> <button class="btn-rechazar">✘</button></li>
-                <li><span>Plato 2</span> <button class="btn-aceptar">✔</button> <button class="btn-rechazar">✘</button></li>
-                <li><span>Plato 3</span> <button class="btn-aceptar">✔</button> <button class="btn-rechazar">✘</button></li>
-                <li><span>Plato 4</span> <button class="btn-aceptar">✔</button> <button class="btn-rechazar">✘</button></li>
-                <li><span>Plato 5</span> <button class="btn-aceptar">✔</button> <button class="btn-rechazar">✘</button></li>
-                <li><span>Plato 6</span> <button class="btn-aceptar">✔</button> <button class="btn-rechazar">✘</button></li>
+                <li><span>Plato 1 - 15,99€</span> <button class="btn-aceptar">✔</button> <button class="btn-rechazar">✘</button></li>
+                <li><span>Plato 2 - 21,99€</span> <button class="btn-aceptar">✔</button> <button class="btn-rechazar">✘</button></li>
             </ul>
         </section>
     </main>
 
+    <script src="../scripts/pedidosadmin.js"></script>
 </body>
 </html>

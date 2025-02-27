@@ -1,0 +1,93 @@
+.contenedor-login {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fondo-login {
+    width: 70%;
+    background: url('../../imagenes/loginimagen.jpg') center/cover no-repeat;
+}
+
+.login-container {
+    width: 30%;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+}
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background: #b89c62;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-container button:hover {
+    background: #8b7544;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container select,
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background: #b89c62;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background: #8b7544;
+}
+
+@media (max-width: 900px) {
+    .contenedor-login {
+        flex-direction: row;
+    }
+
+    .login-container {
+        width: 70%;
+        height: 100%;
+        box-shadow: none;
+    }
+
+    .fondo-login {
+        width: 80%;
+        height: 100%;
+    }
+}

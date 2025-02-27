@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administración de Reservas</title>
     <link rel="stylesheet" href="../estilos/styles.css">
+    <link rel="stylesheet" href="../estilos/mesas.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
     <header>
@@ -22,6 +25,13 @@
     <main>
         <section class="lista-mesas">
             <h2>Gestión de Reservas</h2>
+            <form id="formNuevaMesa" class="form-mesa">
+                <input type="number" id="numeroMesa" placeholder="Número de mesa" required min="1">
+                <input type="number" id="cantidadComensales" placeholder="Cantidad de comensales" required min="1">
+                <button type="submit" class="btn-agregar">Agregar Mesa</button>
+                <button type="submit" class="btn-cancelar">Cancelar</button>
+            </form>
+
             <table>
                 <thead>
                     <tr>
@@ -41,18 +51,11 @@
                             <button class="btn-rechazar">✘</button>
                         </td>
                     </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>Pendiente</td>
-                        <td>
-                            <button class="btn-aceptar">✔</button>
-                            <button class="btn-rechazar">✘</button>
-                        </td>
-                    </tr>
                 </tbody>
             </table>
         </section>
     </main>
+
+    <script src="../scripts/gestionmesas.js"></script>
 </body>
 </html>

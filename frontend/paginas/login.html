@@ -5,24 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Restaurante</title>
     <link rel="stylesheet" href="../estilos/styles.css">
+    <link rel="stylesheet" href="../estilos/login.css">
 </head>
 <body>
-    <div class="login-container">
-        <h2>Iniciar Sesión</h2>
-        
-        <form id="form-login">
-            <label for="rol">Selecciona tu rol:</label>
-            <select id="rol" name="rol">
-                <option value="cliente">Cliente</option>
-                <option value="admin">Administrador</option>
-            </select>
+    <div class="contenedor-login">
+        <div class="login-container">
+            <h2>Iniciar Sesión</h2>
             
-            <input type="email" id="email" placeholder="Correo electrónico" required>
-            <input type="password" id="contraseña" placeholder="Contraseña" required>
-            <button type="submit">Iniciar Sesión</button>
-        </form>
-        
-        <p id="error-mensaje" class="error"></p>
+            <form id="form-login">                
+                <input type="email" id="email" placeholder="Correo electrónico" required>
+                <input type="password" id="contraseña" placeholder="Contraseña" required>
+                <button type="submit">Iniciar Sesión</button>
+                <a href="registro.html" class="btn-registrarse">Registrarse</a>
+            </form>
+            
+            <p id="error-mensaje" class="error"></p>
+        </div>
+        <div class="fondo-login"></div>
     </div>
 </body>
 </html>

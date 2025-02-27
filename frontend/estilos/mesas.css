@@ -1,0 +1,101 @@
+.reserva {
+    background-color: #000; 
+    padding:40px;
+    width: 60%;
+    color: #b89c62;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+
+.reserva h2 {
+    color: #b89c62 ;
+}
+
+.reserva form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reserva input {
+    padding: 8px;
+    border: 1px solid #6a3e19;
+    border-radius: 5px;
+}
+
+.lista-mesas {
+    margin: 30px auto;
+    width: 80%;
+}
+
+.lista-mesas table {
+    width: 100%;
+    border-collapse: collapse;
+    display: none;
+}
+
+.lista-mesas th, .lista-mesas td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.lista-mesas th {
+    background-color: #b89c62 ;
+    color: white;
+}
+
+.lista-mesas td button {
+    padding: 5px 10px;
+    margin: 3px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.lista-mesas td .btn-aceptar {
+    background-color: #2ecc71; 
+    color: white;
+}
+
+.lista-mesas td .btn-rechazar {
+    background-color: #e74c3c; 
+    color: white;
+}
+
+.form-mesa {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form-mesa input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.btn-agregar {
+    padding: 8px 15px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-cancelar {
+    padding: 8px 15px;
+    background-color: #cc2e2e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-agregar:hover {
+    background-color: #27ae60;
+}
