@@ -14,14 +14,24 @@ $(document).ready(function () {
                         "usuario":$("#email").val().trim(),
                         "contraseña":$("#contraseña").val().trim()}),
                   success: async function (response) {
-                        console.log(await response);
-                        if (await response.message==true) {
-                              console.log("BIEN");
+                        //console.log(await response);
+                        if (await response.message.logeado==true) {
                               
                              location.assign("http://127.0.0.1:3000/frontend/paginas/index.html");
                         }else{
-                             location.assign("http://127.0.0.1:3000/frontend/paginas/login.html");
-                             console.log("MAL");
+                              
+                              if ($("#error-mensaje").text()=="Error contraseña o Usuario incorrecto") {
+                                    
+                                    $("#error-mensaje").empty();
+                                    $("#error-mensaje").append("Vuelvelo a intentar");
+                                    
+                              }else{
+                                    $("#error-mensaje").empty();
+                                    $("#error-mensaje").append("Error contraseña o Usuario incorrecto");
+                              }
+                              
+
+                             
                         }
                   }
                  });
