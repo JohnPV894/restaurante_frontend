@@ -1,0 +1,17 @@
+{
+   "version": 2,
+   "builds": [
+     {
+       "src": "frontend/paginas/login.html",
+       "use": "@vercel/static"
+     }
+   ],
+   "routes": [
+     {
+       "src": "/login",
+       "dest": "frontend/paginas/login.html"
+     }
+   ]
+ }
+ 
+ 
