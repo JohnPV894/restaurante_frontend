@@ -8,7 +8,8 @@ $(document).ready(function () {
             console.log( $("#email").val().trim());
             $.ajax({
                   method: "POST",
-                  url: "http://localhost:5000/api/validarLogin",
+                  url: "https://restaurante-backend-nine.vercel.app/api/validarLogin",
+                 // url: "http://localhost:5000/api/validarLogin",
                   contentType: 'application/json',
                   data:JSON.stringify({
                         "usuario":$("#email").val().trim(),
